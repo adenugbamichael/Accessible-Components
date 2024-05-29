@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Accessible Components</title>
+</head>
+<body>
+  <main id="main"  class="central">
+    <h1>Toggle buttons</h1>
+<hr>
+<h4>Changing state</h4>
+    <input   type="checkbox" id="notify" name="notify"  value="on">
+    <label  for="notify">Notify by email</label>
+<h4>Checkboxes and radio buttons</h4>
+    <fieldset>
+      <legend>Notify by email</legend>
+      <input type="radio" name="notify" id="notify-on" value="on" checked>
+      <label for="notify-on">on</label>
+      <input type="radio" name="notify" id="notify-off" value="off">
+      <label for="notify-off">off</label>
+    </fieldset>
+  </main>
+  </body>
+<script src="/script.js"></script>
+</html>
