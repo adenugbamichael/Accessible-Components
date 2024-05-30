@@ -1,0 +1,240 @@
+@import url('https://fonts.cdnfonts.com/css/metropolis-4');
+
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Miriam Libre", sans-serif; */
+/* font-family: "Asap", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+font-variation-settings:
+  "wdth" 100; */
+  *,
+*::before,
+*::after {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  /*
+  margin: 0;
+  padding: 0; 
+  */
+  box-sizing: border-box;
+}
+html {
+  font-family: Asap, sans-serif;
+  font-size: calc(1em + 0.5vw);
+  color: #222;
+  line-height: 1.5;
+  background: #fefefe;
+}
+ /* * + * {
+  margin-top: 1.5rem;
+}  */
+body,
+br,
+dt,
+dd,
+th,
+td,
+option,
+[hidden] + *,
+:empty:not(img) + *,
+li + li,
+header * + * {
+  margin-top: 0;
+}
+p + p {
+  margin-top: 1rem;
+}
+hr {
+  height: 0.25rem;
+  border: 2px solid #222;
+  border-left: 0;
+  border-right: 0;
+  margin: 2.1rem 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+:focus {
+  outline: none;
+}
+:focus:not([tabindex='-1']) {
+  outline: 4px solid #80b3ff;
+  outline-offset: 2px;
+}
+[href='#main'] {
+  position: absolute;
+  top: -2em;
+  right: 0.7rem;
+}
+[href='#main']:focus {
+  top: 0.75rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /* font-family: 'Metropolis', sans-serif; */
+  font-family: Miriam Libre, serif;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 3rem;
+}
+main {
+  display: block;
+  padding-top: 1.5rem;
+}
+main h1 {
+  font-size: 2.5rem;
+}
+.central{
+  max-width: 32rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* .site-name {
+    font-size: 4rem;
+  word-spacing: 100em;
+  margin-top: 3.5rem;
+  line-height: 1;
+} */
+h2 {
+  font-size: 1.75rem;
+}
+* + h2 {
+  margin-top: 2.1rem;
+}
+h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+h3,
+h4 {
+  margin-bottom: 0.25rem;
+}
+.extra-btm{
+  margin-bottom: 1rem;
+
+}
+nav h3 {
+  text-transform: none;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+main img {
+  margin: 1.5rem 0;
+}
+main img:last-child {
+  margin-bottom: 0;
+}
+main p img:last-child {
+  margin-bottom: 1.5rem;
+}
+img + p {
+  margin-top: 0;
+}
+
+/* customise style todo list */
+ul{
+  padding-inline-start: 0px;
+}
+li{
+  display: flex;
+    align-items: center;
+    margin-top: 1rem !important;
+}
+
+li label {
+  margin-right: auto;
+}
+
+.vh {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+input, [type="submit"] {
+  border: 0.125rem solid;
+  border-radius: 0.25rem;
+  line-height: 1;
+  font-size: inherit;
+}
+
+.tick {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.125rem solid;
+  margin-right: 0.25rem;
+}
+
+:checked+.tick svg {
+  display: inline-block;
+}
+
+.tick svg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 0.125rem;
+}
+
+:checked~.text {
+  text-decoration: line-through;
+}
+
+li button {
+  border: 0;
+  background: transparent;
+  margin-left: 0.5rem;
+}
+
+li button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+form {
+  margin-top: 1rem;
+  display: flex;
+}
+
+[type="text"] {
+  flex: 3;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+}
+
+[type="submit"][disabled] {
+  opacity: 1;
+}
+
+[type="submit"] {
+  background: rgb(239 246 255);
+  color: #333;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid  rgb(239 246 255);
+
