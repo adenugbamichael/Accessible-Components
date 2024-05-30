@@ -13,6 +13,8 @@
 <h4>Changing state</h4>
     <input   type="checkbox" id="notify" name="notify"  value="on">
     <label  for="notify">Notify by email</label>
+
+    <!--Checkboxes and radio buttons  -->
 <h4>Checkboxes and radio buttons</h4>
     <fieldset>
       <legend>Notify by email</legend>
@@ -21,7 +23,52 @@
       <input type="radio" name="notify" id="notify-off" value="off">
       <label for="notify-off">off</label>
     </fieldset>
+
+<br>
+    <!-- Toggle button -->
+    <h4 class="extra-btm">Toggle button with aria-pressed</h4>
+    <button aria-pressed="false">Notify by email</button>
+
+
+
+    <!--Switch controls  -->
+
+<br>
+<h4 class="switch">Switch controls, with auxiliary labeling using
+  aria-labelledby
+</h4>
+<ul>
+  <li>
+    <span id="notify-email">Notify by email</span>
+    <button class="btn" role="switch" aria-checked="true" aria-labelledby="notify-email">
+      <span>on</span>
+      <span>off</span>
+    </button>
+  </li>
+  <li>
+    <span id="notify-sms">Notify by SMS</span>
+    <button class="btn" role="switch" aria-checked="false" aria-labelledby="notify-sms">
+      <span>on</span>
+      <span>off</span>
+    </button>
+  </li>
+  <li>
+    <span id="notify-fax">Notify by fax</span>
+    <button class="btn" role="switch" aria-checked="true" aria-labelledby="notify-fax">
+      <span>on</span>
+      <span>off</span>
+    </button>
+  </li>
+  <li>
+    <span id="notify-smoke">Notify by smoke signal</span>
+    <button class="btn" role="switch" aria-checked="false" aria-labelledby="notify-smoke">
+      <span>on</span>
+      <span>off</span>
+    </button>
+  </li>
+</ul>
   </main>
   </body>
 <script src="/script.js"></script>
 </html>
+
