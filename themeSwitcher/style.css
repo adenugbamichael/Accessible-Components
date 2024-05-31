@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  max-width: none;
+}
+
+.wrap {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.wrap>*+* {
+  margin-top: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  padding: 1.5rem;
+  border: 2px solid;
+  background-color: #ccc;
+}
+
+.button {
+  background: #000;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.button [type="checkbox"] {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.button [type="checkbox"]+span::before {
+  content: 'off';
+}
+
+.button [type="checkbox"]:checked+span::before {
+  content: 'on';
+}
+
+/* custom styles */
+html {
+  background-color: #eee;
+  filter: invert(100%);
+}
+
+* {
+  background-color: inherit;
+}
+
+img:not([src*=".svg"]),
+[style*="url("] {
+  filter: invert(100%);
+}
