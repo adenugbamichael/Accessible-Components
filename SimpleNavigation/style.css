@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+  font-family: Asap, sans-serif;
+  font-size: calc(1em + 0.5vw);
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 90ch;
+  margin: 0 auto;
+  padding:0 1.5rem;
+  background-color: #222;
+  color:#fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /* font-family: 'Metropolis', sans-serif; */
+  font-family: Miriam Libre, serif;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing:-0.015em;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-item: center;
+padding:1.5rem 0;
+}
+
+.logo{
+  text-decoration:none;
+  color:#fff;
+}
+
+
+ .link{
+  text-decoration:none;
+  margin-left:1rem;
+  /* padding: 0.875em 1em; */
+  color:#fff;
+}
+
+.navbar a:hover {
+  background-color: #444;
+  color:#fff;
+  
+ 
+  }
+
+  :focus {
+    outline: none;
+  }
+  :focus:not([tabindex='-1']) {
+    outline: 4px solid #80b3ff;
+    outline-offset: 2px;
+  }
+
+.content{
+  padding-top:3rem;
+}
+.page{
+  margin-top: 0.5rem;
+}
+/* Custom style */
+
+
